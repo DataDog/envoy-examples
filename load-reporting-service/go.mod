@@ -1,8 +1,6 @@
 module github.com/envoyproxy/envoy/examples/load-reporting-service
 
-go 1.21
-
-toolchain go1.22.5
+go 1.25.7
 
 require (
 	github.com/envoyproxy/go-control-plane v0.12.0
