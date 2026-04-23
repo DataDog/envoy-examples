@@ -1,18 +1,18 @@
 module github.com/envoyproxy/examples/golang-network/simple
 
 // the version should >= 1.18
-go 1.18
+go 1.24.6
 
 // NOTICE: these lines could be generated automatically by "go mod tidy"
 require (
-	github.com/cncf/xds/go v0.0.0-20231128003011-0fa0005c9caa
-	github.com/envoyproxy/envoy v1.31.0
-	google.golang.org/protobuf v1.34.2
+	github.com/cncf/xds/go v0.0.0-20250501225837-2ac532fd4443
+	github.com/envoyproxy/envoy v1.37.2
+	google.golang.org/protobuf v1.36.11
 )
 
 require (
-	github.com/envoyproxy/protoc-gen-validate v1.0.2 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20240102182953-50ed04b92917 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240102182953-50ed04b92917 // indirect
+	cel.dev/expr v0.15.0 // indirect
+	github.com/envoyproxy/protoc-gen-validate v1.2.1 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20250728155136-f173205681a0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250728155136-f173205681a0 // indirect
 )
