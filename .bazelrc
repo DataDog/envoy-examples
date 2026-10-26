@@ -3,3 +3,6 @@ common --color=yes
 common:ci --noshow_progress
 common:ci --noshow_loading_progress
 common:ci --test_output=errors
+
+# Preserve Bazel 7 behavior for optional file globs under Bazel 8.
+common --incompatible_disallow_empty_glob=false
