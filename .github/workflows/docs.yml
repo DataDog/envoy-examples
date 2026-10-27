@@ -26,5 +26,5 @@ jobs:
       with:
         path: examples
     - run: |
-        bazel build --override_repository=envoy_examples=../examples --config=ci //docs
+        bazel build --inject_repository=envoy_examples=../examples --config=ci //docs
       working-directory: envoy

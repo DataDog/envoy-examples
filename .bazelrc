@@ -3,3 +3,10 @@ common --color=yes
 common:ci --noshow_progress
 common:ci --noshow_loading_progress
 common:ci --test_output=errors
+
+# Bazel 8 disables WORKSPACE by default; this repo still uses WORKSPACE (no MODULE.bazel).
+common --enable_workspace=true
+common --noenable_bzlmod
+
+# Preserve Bazel 7 behavior for optional file globs under Bazel 8.
+common --incompatible_disallow_empty_glob=false
